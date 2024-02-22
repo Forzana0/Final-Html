@@ -3,72 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Ресторан "Meatopia"</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
         }
+
         header {
             background-color: #333;
-            color: #fff;
+            color: white;
             text-align: center;
             padding: 1em;
         }
+
+        nav {
+            background-color: #555;
+            padding: 0.5em;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1em;
+            margin: 0 1em;
+        }
+
         section {
-            padding: 20px;
+            padding: 2em;
         }
-        h2 {
-            color: #333;
-        }
-        .project {
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin-bottom: 20px;
-            background-color: #fff;
-        }
+
         footer {
             background-color: #333;
-            color: #fff;
+            color: white;
             text-align: center;
             padding: 1em;
+        }
+
+        .menu-item {
+            border-bottom: 1px solid #ddd;
+            padding: 1em 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin: 1em;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label, input, textarea, button {
+            display: block;
+            margin: 0.5em 0;
+        }
+
+        button {
+            background-color: #555;
+            color: white;
+            padding: 0.5em;
+            border: none;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>My Portfolio</h1>
+        <h1>Ресторан "Назва Ресторану"</h1>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>This is a brief description about me. You can add more details here.</p>
+    <nav>
+        <a href="#menu">Меню</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#contact">Контакти</a>
+        <a href="#order">Онлайн замовлення</a>
+    </nav>
+
+    <section id="menu">
+        <h2>Меню</h2>
+        <div class="menu-item">
+            <h3>Страва 1</h3>
+            <p>Опис страви 1...</p>
+        </div>
+        <div class="menu-item">
+            <h3>Страва 2</h3>
+            <p>Опис страви 2...</p>
+        </div>
+        <!-- Додайте інші страви за аналогією -->
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of Project 1.</p>
+    <section id="gallery">
+        <h2>Галерея</h2>
+        <div class="gallery">
+            <img src="image1.jpg" alt="Зображення 1">
+            <img src="image2.jpg" alt="Зображення 2">
+            <!-- Додайте інші зображення за аналогією -->
         </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of Project 2.</p>
-        </div>
-        <!-- Add more projects as needed -->
     </section>
 
     <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out to me via the form below:</p>
-        <!-- Add your contact form here -->
+        <h2>Контакти</h2>
+        <p>Адреса: вул. Назва, місто</p>
+        <p>Телефон: +380123456789</p>
+        <p>Email: info@restaurant.com</p>
+    </section>
+
+    <section id="order">
+        <h2>Онлайн замовлення</h2>
+        <form>
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Електронна пошта:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="order">Замовлення:</label>
+            <textarea id="order" name="order" rows="4" required></textarea>
+
+            <button type="submit">Замовити</button>
+        </form>
     </section>
 
     <footer>
-        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        <p>&copy; 2024 Ресторан "Назва Ресторану". Усі права захищені.</p>
     </footer>
 
 </body>
