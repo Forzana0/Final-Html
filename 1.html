@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ресторан "Meatopia"</title>
+    <title>Meatopia - М'ясний Ресторан</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -42,77 +42,98 @@
             padding: 1em;
         }
 
-        .menu-item {
-            border-bottom: 1px solid #ddd;
-            padding: 1em 0;
+        .description {
+            text-align: center;
+            margin-bottom: 2em;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
         }
 
         .gallery img {
-            width: 100%;
+            width: 30%;
             max-width: 300px;
             height: auto;
             margin: 1em;
-        }
-
-        form {
-            max-width: 400px;
-            margin: 0 auto;
-        }
-
-        label, input, textarea, button {
-            display: block;
-            margin: 0.5em 0;
-        }
-
-        button {
-            background-color: #555;
-            color: white;
-            padding: 0.5em;
-            border: none;
-            cursor: pointer;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Ресторан "Назва Ресторану"</h1>
+        <h1>Meatopia - М'ясний Ресторан</h1>
     </header>
 
     <nav>
+        <a href="#about">Про Ресторан</a>
         <a href="#menu">Меню</a>
         <a href="#gallery">Галерея</a>
         <a href="#contact">Контакти</a>
-        <a href="#order">Онлайн замовлення</a>
     </nav>
 
+    <section id="about" style="text-align: center;">
+        <h2>Про Ресторан</h2>
+        <p class="description" style="font-size: 22px; text-align: center;">
+            Ласкаво просимо до Meatopia – нашого унікального ресторану, де ми втілюємо справжнє мистецтво м'яса та барбекю. У Meatopia ми прагнемо відтворити неперевершений смак і аромат найсвіжішого м'яса, яке готується з любов'ю та страстю.
+        
+            М'ясна атмосфера Meatopia – це не просто прийняття їжі, це справжнє свято смаку та гастрономії. Наш простір наповнений ароматом копченого м'яса та затишною атмосферою, де кожен гість відчує себе особливим.
+                    
+            Ми вважаємо себе майстрами барбекю, які дбайливо обирають кращі інгредієнти та використовують традиційні методи готування. Наші кухарі присвячені створенню барбекю вищого класу, яке розкриває справжній смак м'яса.
+                    
+            Зустрічайте Meatopia – де кожен шматочок м'яса – це витвір мистецтва!
+        </p>
+    </section>
+    
+    
+
     <section id="menu">
-        <h2>Меню</h2>
+        <h1>Меню</h1>
         <div class="menu-item">
-            <h3>Страва 1</h3>
-            <p>Опис страви 1...</p>
+            <h3>Прайм Рібай (340)</h3>
+            <p style="font-size: 20px;">Відмінно відрубаний кусок стейка, приготований до ідеальної ступені прожарювання. Соковитий та неймовірно м'який, цей стейк розкриває глибокий смак високоякісного м'яса.</p>
         </div>
         <div class="menu-item">
-            <h3>Страва 2</h3>
-            <p>Опис страви 2...</p>
+            <h3>Смаковані в диму (420)</h3>
+            <p style="font-size: 20px;">Гостинці для поціновувачів справжнього барбекю. Реберця довго коптяться в яблучному диму, затримуючи аромат і присмак, щоб кожен куш здавав найтонші відтінки справжнього смаку.</p>
         </div>
-        <!-- Додайте інші страви за аналогією -->
+        <div class="menu-item">
+            <h3>Стейк з аргентинського асадо (535)</h3>
+            <p style="font-size: 20px;">Вперше відчуйте аутентичний смак аргентинського асадо. Кусок великої ваги, маринований у власному соусі та приготований на відкритому вогні, надає цьому стейку неповторний аромат та текстуру.</p>
+        </div>
+        <div class="menu-item">
+            <h3>М'ясна Розкіш (135)</h3>
+            <p style="font-size: 20px;">Наша версія класичного бургера – величезна соковита котлета, свіжі овочі та наш унікальний соус, все це в м'якій булочці, створюючи справжню експлозію смаку.</p>
+        </div>
+        <div class="menu-item">
+            <h3>Східний Делікатес (480)</h3>
+            <p style="font-size: 20px;">Спробуйте наш оригінальний східний кебаб, виготовлений зі змішаних м'яс та ароматних спецій. Подається зі свіжими овочами та соусом на ваш вибір.</p>
+        </div>
+        <div class="menu-item">
+            <h3>Маринад Майстра (240)</h3>
+            <p style="font-size: 20px;">Ковбаски-стрічки, вкриті авторським маринадом, створюють стійкий та смачний смак. Легко поєднують у собі вишуканість та сміливість в єдиній страві.</p>
+        </div>
     </section>
 
-    <section id="gallery">
+    <section id="gallery" style="text-align: center;">
         <h2>Галерея</h2>
         <div class="gallery">
-            <img src="image1.jpg" alt="Зображення 1">
-            <img src="image2.jpg" alt="Зображення 2">
-            <!-- Додайте інші зображення за аналогією -->
+            <img src="./Meals/Прайм Рібай.jpg" alt="Зображення 1">
+            <img src="./Meals/Смаковані в диму.jpg" alt="Зображення 2">
+            <img src="./Meals/Стейк з аргентинського асадо.jpg" alt="Зображення 3">
+            <img src="./Meals/М'ясна Розкіш.jpg" alt="Зображення 4">
+            <img src="./Meals/Східний делікатес.jpg" alt="Зображення 5">
+            <img src="./Meals/Маринад Майстра.jpeg" alt="Зображення 6">
         </div>
     </section>
 
     <section id="contact">
         <h2>Контакти</h2>
-        <p>Адреса: вул. Назва, місто</p>
-        <p>Телефон: +380123456789</p>
-        <p>Email: info@restaurant.com</p>
+        <p>Адреса: вул. Соборна 73, місто Рівне</p>
+        <p>Телефон: +380 73 737 3737 </p>
+        <p>Email: meatopia73@gmail.com</p>
     </section>
 
     <section id="order">
@@ -125,14 +146,13 @@
             <input type="email" id="email" name="email" required>
 
             <label for="order">Замовлення:</label>
-            <textarea id="order" name="order" rows="4" required></textarea>
+            <textarea id="order" name="order" rows="1" required></textarea>
 
             <button type="submit">Замовити</button>
         </form>
     </section>
-
     <footer>
-        <p>&copy; 2024 Ресторан "Назва Ресторану". Усі права захищені.</p>
+        <p>&copy; 2024 Meatopia - М'ясний Ресторан. Усі права захищені.</p>
     </footer>
 
 </body>
