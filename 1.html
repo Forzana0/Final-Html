@@ -1,3 +1,5 @@
+<!-- Веб-сайт ресторану:
+Створіть веб-сайт для ресторану з меню, галереєю зображень, контактною інформацією та можливістю замовлення онлайн. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +11,9 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-image: url('./Meals/abstract-blur-restaurant-interior.jpg');
+            background-size: cover;
+            background-position: center;
         }
 
         header {
@@ -19,16 +24,24 @@
         }
 
         nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
             background-color: #555;
             padding: 0.5em;
             text-align: center;
-        }
+            }
 
         nav a {
             color: white;
             text-decoration: none;
             padding: 1em;
             margin: 0 1em;
+            transition: color 0.3s ease-in-out;
+            }
+
+        nav a:hover {
+            color: #000000;
         }
 
         section {
@@ -43,8 +56,14 @@
         }
 
         .description {
-            text-align: center;
-            margin-bottom: 2em;
+        text-align: center;
+        margin-bottom: 2em;
+        opacity: 0.5; 
+        transition: opacity 0.3s ease-in-out; 
+        }
+
+        .description:hover {
+        opacity: 1;
         }
 
         .gallery {
@@ -59,6 +78,10 @@
             height: auto;
             margin: 1em;
         }
+
+        .gallery img:hover {
+        transform: scale(1.2);
+    }
     </style>
 </head>
 <body>
